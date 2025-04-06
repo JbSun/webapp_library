@@ -1,0 +1,65 @@
+.reading-books-container {
+  background: #2c3539;
+  border-radius: 36rpx;
+  margin: 30rpx;
+  font-size: 24rpx;
+}
+
+.reading-books-title {
+  color: #fff;
+  padding: 20rpx 30rpx 20rpx 30rpx;
+  margin-bottom: 30rpx;
+  border-bottom: 1rpx solid #a6aeb5;
+}
+
+.reading-books-content {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  padding: 0 30rpx 30rpx 30rpx;
+}
+
+.reading-books-content-container {
+  box-sizing: border-box;
+  /* width: 100%; */
+  flex: 1;
+}
+
+.reading-books {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+}
+
+.reading-book-item {
+  position: relative;
+  width: 120rpx;
+  margin-right: 22rpx;
+}
+
+.reading-book-item-image {
+  width: 120rpx;
+  height: 171rpx;
+}
+
+.reading-books-operation {
+  display: flex;
+  align-items: center;
+  color: #a6aeb5;
+  flex-shrink: 0;
+}
+
+.reading-books-operation__txt {
+  width: 6rpx;
+  margin-right: 32rpx;
+}
+
+.reading-books-operation__arrow {
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-width: 2px 2px 0 0;
+  border-color: #a6aeb5;
+  border-style: solid;
+  transform: translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}

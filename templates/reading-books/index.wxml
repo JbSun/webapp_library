@@ -1,0 +1,18 @@
+<template name="reading-books">
+  <view class="reading-books-container">
+    <view class="reading-books-title">正在阅读的书籍</view>
+    <view class="reading-books-content">
+      <view class="reading-books-content-container" scroll-x="true">
+        <view class="reading-books">
+          <navigator wx:for="{{books}}" wx:key="{{item.id}}" url="/pages/booklist/children/booklist-detail?id={{item.id}}" class="reading-book-item" hover-class="ui--active">
+            <image class="reading-book-item-image" src="{{item.imgs.small || '/images/icon_empty_booklist.png'}}" mode="aspectFill" />
+          </navigator>
+        </view>
+      </view>
+      <view class="reading-books-operation">
+        <view class="reading-books-operation__txt">书架</view>
+        <view class="reading-books-operation__arrow"></view>
+      </view>
+    </view>
+  </view>
+</template>

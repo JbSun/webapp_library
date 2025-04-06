@@ -1,0 +1,5 @@
+<viev>
+  <navigator wx:for="{{deoms}}" wx:key="{{item}}" url="/component-demos/{{item}}/index">
+    <view>{{item}}</view>
+  </navigator>
+</viev>

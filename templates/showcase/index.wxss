@@ -5,6 +5,13 @@
   background: #fff;
 }
 
+.showcase-popular-container {
+  box-sizing: border-box;
+  padding: 20rpx;
+  width: 100%;
+  background: #a6aeb5;
+}
+
 .showcase {
   display: flex;
   display: -webkit-flex;
@@ -15,6 +22,12 @@
   position: relative;
   width: 200rpx;
   margin-right: 47rpx;
+}
+
+.showcase__popular-item {
+  position: relative;
+  width: 120rpx;
+  margin-right: 27rpx;
 }
 
 /*  
@@ -31,6 +44,10 @@
   height: 285rpx;
 }
 
+.showcase__item-popular-image--book {
+  width: 120rpx;
+  height: 171rpx;
+}
 
 .showcase__item-image--booklist {
   width: 200rpx;

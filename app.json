@@ -31,6 +31,7 @@
     "pages/home/children/advanced-search",
     "pages/home/children/classification",
     "pages/profile/children/about",
+    "pages/demo/demo",
     "component-demos/index/index",
     "component-demos/async-button/index",
     "component-demos/async-switch/index",
@@ -73,7 +74,7 @@
         "selectedIconPath": "images/icon_booklist_fill.png"
       },
       {
-        "pagePath": "pages/cart/cart",
+        "pagePath": "component-demos/index/index",
         "text": "借书栏",
         "iconPath": "images/icon_cart_line.png",
         "selectedIconPath": "images/icon_cart_fill.png",

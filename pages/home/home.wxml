@@ -1,17 +1,21 @@
 <import src="/templates/showcase/index" />
+<import src="/templates/reading-books/index" />
 <import src="/templates/page-status-indicator/index" />
 <home-search-bar id="searchBar" bindfocus="onFocus" bindcancel="onCancel" bindsearch="onSearch"></home-search-bar>
 <template data="{{pageStatus}}" is="page-status-indicator"></template>
 <!-- 主页 -->
 <view wx:if="{{pageStatus == 'done' && !search.focus}}" class="panel-area">
-  <panel title="阅读统计" url="/pages/profile/children/order-history">
+  <!-- <panel title="阅读统计" url="/pages/profile/children/order-history">
     <view class="color-green statistics-panel__number">
       {{statistics.book_num}}<span class="statistics-panel__unit">本</span>
     </view>
     <view class="color-orange statistics-panel__number">
       {{statistics.page_num}}<span class="statistics-panel__unit">页</span>
     </view>
-  </panel>
+  </panel> -->
+  <!-- <panel title="正在阅读" url="/pages/list/booklist?type=recommend"> -->
+  <template is="reading-books" data="{{books: readingBooks}}"></template>
+  <!-- </panel> -->
   <panel title="推荐图书" url="/pages/list/book?type=recommend">
     <template is="showcase-book" data="{{books: recommendBooks}}"></template>
   </panel>
