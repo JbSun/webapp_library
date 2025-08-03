@@ -169,12 +169,12 @@ Page({
         tabList: [
           {
             key: "recommend",
-            title: "推荐书籍",
+            title: "推荐",
             content: [...res[0].data, ...res[0].data].map((i) => i.book),
           },
           {
             key: "categories",
-            title: "书籍分类",
+            title: "分类",
             content: res[0].data.map((i) => i.book),
           },
           { key: "ranking", title: "排行榜", content: res[1].data.books },

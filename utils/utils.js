@@ -185,3 +185,7 @@ export function dateAdd (interval, number, date) {
     }
   }
 }
+
+export async function sleep(time){
+  return new Promise(resolve => setTimeout(resolve, time));
+}

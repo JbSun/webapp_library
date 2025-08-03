@@ -17,8 +17,9 @@
   line-height: 50px;
 }
 .tab-item.active {
-  font-weight: bold;
-  border-bottom: 2px solid #007aff;
+  /* font-weight: bold; */
+  color: #007aff;
+  /* border-bottom: 2px solid #007aff; */
 }
 .swiper-container {
   height: calc(100vh - 50px);
@@ -78,4 +79,9 @@
 
 .book-list__item-message_author {
   color: #a6aeb5;
+}
+
+.loading-indicator {
+  padding: 12rpx;
+  text-align: center;
 }
