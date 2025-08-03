@@ -10,18 +10,25 @@ var searchBar; // 保存home-search-bar组件的引用
 Page({
   data: {
     pageStatus: "loading", // done, error
+    scrollTop: 0,
     search: {
       focus: false,
       history: [],
     },
-    ranking: [],
-    readingBooks: [],
-    recommendBooks: [],
+    ranking: [], // 排行榜
+    readingBooks: [], // 正在阅读的书籍
+    recommendBooks: [], // 推荐书籍
+    categories: [], // 书籍分类
     recommendBooklists: [],
     statistics: {
       book_num: 0,
       page_num: 0,
     },
+    tabList: [
+      { key: "recommend", title: "推荐书籍" },
+      { key: "categories", title: "书籍分类", content: "活动内容区域" },
+      { key: "ranking", title: "排行榜", content: "动态内容区域" },
+    ],
   },
 
   onLoad: function (options) {
@@ -34,6 +41,10 @@ Page({
 
   onReloadPage: function () {
     this._loadPage();
+  },
+
+  onPageScroll: function (e) {
+    this.setData({ scrollTop: e.scrollTop });
   },
 
   onReady: function () {
@@ -155,6 +166,19 @@ Page({
         ranking: res[1].data.books,
         recommendBooklists: res[2].data,
         statistics: res[3].reading_statistics,
+        tabList: [
+          {
+            key: "recommend",
+            title: "推荐书籍",
+            content: [...res[0].data, ...res[0].data].map((i) => i.book),
+          },
+          {
+            key: "categories",
+            title: "书籍分类",
+            content: res[0].data.map((i) => i.book),
+          },
+          { key: "ranking", title: "排行榜", content: res[1].data.books },
+        ],
       });
     });
   },

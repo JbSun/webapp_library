@@ -6,6 +6,7 @@ Page({
   },
 
   onPageScroll: function (e) {
+    console.log(222222,e.scrollTop);
     this.setData({scrollTop: e.scrollTop})
   },
 

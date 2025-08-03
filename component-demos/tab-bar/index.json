@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "TabBar",
   "usingComponents": {
-    "tab-bar": "/components/tab-bar/index"
+    "tab-bar": "/components/tab-bar/index",
+    "sticky": "/components/sticky/index"
   }
 }

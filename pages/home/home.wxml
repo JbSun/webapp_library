@@ -1,7 +1,10 @@
 <import src="/templates/showcase/index" />
 <import src="/templates/reading-books/index" />
 <import src="/templates/page-status-indicator/index" />
-<home-search-bar id="searchBar" bindfocus="onFocus" bindcancel="onCancel" bindsearch="onSearch"></home-search-bar>
+<sticky scroll-top="{{ scrollTop }}">
+  <home-search-bar id="searchBar" bindfocus="onFocus" bindcancel="onCancel" bindsearch="onSearch"></home-search-bar>
+  <home-search-bar slot="sticky" id="searchBar" bindfocus="onFocus" bindcancel="onCancel" bindsearch="onSearch"></home-search-bar>
+</sticky>
 <template data="{{pageStatus}}" is="page-status-indicator"></template>
 <!-- 主页 -->
 <view wx:if="{{pageStatus == 'done' && !search.focus}}" class="panel-area">
@@ -15,16 +18,18 @@
   </panel> -->
   <!-- <panel title="正在阅读" url="/pages/list/booklist?type=recommend"> -->
   <template is="reading-books" data="{{books: readingBooks}}"></template>
+
+  <sticky-tabs id="stickyTabs" tabs="{{tabList}}" top="47" scrollTop="{{scrollTop}}" newsList="{{newsList}}" loadingNews="{{loadingNews}}" finishedNews="{{finishedNews}}" bind:loadmore="loadMoreNews" />
   <!-- </panel> -->
-  <panel title="推荐图书" url="/pages/list/book?type=recommend">
-    <template is="showcase-book" data="{{books: recommendBooks}}"></template>
+  <!-- <panel title="推荐图书" url="/pages/list/book?type=recommend">
+    <template is="showcase-book-list" data="{{books: recommendBooks}}"></template>
   </panel>
   <panel title="近期借阅排行" url="/pages/list/book?type=ranking">
     <template is="showcase-book" data="{{books: ranking}}"></template>
   </panel>
   <panel title="推荐书单" url="/pages/list/booklist?type=recommend">
     <template is="showcase-booklist" data="{{booklists: recommendBooklists}}"></template>
-  </panel>
+  </panel> -->
 </view>
 <!-- 搜索栏容器 -->
 <view wx:if="{{search.focus}}" class="search-box">

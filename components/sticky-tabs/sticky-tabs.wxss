@@ -1,0 +1,40 @@
+.tab-bar {
+  display: flex;
+  background-color: #fff;
+  height: 50px;
+  z-index: 999;
+}
+.tab-bar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2rpx 6rpx rgba(0,0,0,0.1);
+}
+.tab-item {
+  flex: 1;
+  text-align: center;
+  line-height: 50px;
+}
+.tab-item.active {
+  font-weight: bold;
+  border-bottom: 2px solid #007aff;
+}
+.swiper-container {
+  height: calc(100vh - 50px);
+}
+.tab-content {
+  height: 100%;
+}
+.news-list {
+  height: 100%;
+}
+.news-item {
+  padding: 20rpx;
+  border-bottom: 1px solid #f0f0f0;
+}
+.loading {
+  text-align: center;
+  padding: 20rpx;
+  color: #999;
+}

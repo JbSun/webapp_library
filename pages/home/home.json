@@ -1,9 +1,10 @@
 {
   "navigationBarTitleText": "主页",
   "enablePullDownRefresh": true,
-  "usingComponents":
-  {
+  "usingComponents": {
     "home-search-bar": "/pages/components/home-search-bar/index",
-    "panel": "/components/panel/index"
+    "panel": "/components/panel/index",
+    "sticky": "/components/sticky/index",
+    "sticky-tabs": "./components/sticky-tabs/sticky-tabs"
   }
 }

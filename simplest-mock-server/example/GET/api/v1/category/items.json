@@ -1,0 +1,42 @@
+{
+  "categories": function({
+    _req,
+    Mock
+  }) {
+    return [{
+      "id": Mock.mock("@integer(60, 100)"),
+      "title": "精品小说",
+      "img": "https://cdn.weread.qq.com/weread/cover/16/YueWen_22261199/t6_YueWen_22261199.jpg",
+      "books_num": Mock.mock("@integer(1000, 10000)"),
+    }, {
+      "id": Mock.mock("@integer(60, 100)"),
+      "title": "历史",
+      "img": "https://cdn.weread.qq.com/weread/cover/97/yuewen_822995/t6_yuewen_8229951695023669.jpg",
+      "books_num": Mock.mock("@integer(1000, 10000)"),
+    },
+    {
+      "id": Mock.mock("@integer(60, 100)"),
+      "title": "精品小说",
+      "img": "https://cdn.weread.qq.com/weread/cover/16/YueWen_22261199/t6_YueWen_22261199.jpg",
+      "books_num": Mock.mock("@integer(1000, 10000)"),
+    },{
+      "id": Mock.mock("@integer(60, 100)"),
+      "title": "精品小说",
+      "img": "https://cdn.weread.qq.com/weread/cover/16/YueWen_22261199/t6_YueWen_22261199.jpg",
+      "books_num": Mock.mock("@integer(1000, 10000)"),
+    },{
+      "id": Mock.mock("@integer(60, 100)"),
+      "title": "精品小说",
+      "img": "https://cdn.weread.qq.com/weread/cover/16/YueWen_22261199/t6_YueWen_22261199.jpg",
+      "books_num": Mock.mock("@integer(1000, 10000)"),
+    },{
+      "id": Mock.mock("@integer(60, 100)"),
+      "title": "精品小说",
+      "img": "https://cdn.weread.qq.com/weread/cover/16/YueWen_22261199/t6_YueWen_22261199.jpg",
+      "books_num": Mock.mock("@integer(1000, 10000)"),
+    }]
+  },
+  "start": "@integer(60, 100)",
+  "count": "@integer(60, 100)",
+  "total": "@integer(60, 100)"
+}

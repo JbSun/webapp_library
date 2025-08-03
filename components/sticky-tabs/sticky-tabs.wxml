@@ -1,0 +1,29 @@
+<view>
+  <!-- 占位 -->
+  <view wx:if="{{isSticky}}" style="height: 50px;"></view>
+
+  <!-- 吸顶 tab -->
+  <view class="tab-bar {{isSticky ? 'fixed' : ''}}" style="top: {{top}}px;">
+    <block wx:for="{{tabs}}" wx:key="key">
+      <view class="tab-item {{activeIndex === index ? 'active' : ''}}" data-index="{{index}}" bindtap="onTabClick">
+        {{item.title}}
+      </view>
+    </block>
+  </view>
+
+  <!-- 内容区域 -->
+  <swiper current="{{activeIndex}}" bindchange="onSwiperChange" class="swiper-container" skip-hidden-item-layout>
+    <block wx:for="{{tabs}}" wx:key="key">
+      <swiper-item>
+        <view class="tab-content">
+          <!-- 其他 tab -->
+          <scroll-view scroll-y class="news-list" bindscrolltolower="onNewsScrollToLower" style="height: 100%">
+            <block wx:for="{{item.content}}" wx:key="id">
+              <view class="news-item">{{item.title}}</view>
+            </block>
+          </scroll-view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

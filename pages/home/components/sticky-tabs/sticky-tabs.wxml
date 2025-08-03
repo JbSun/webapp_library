@@ -1,0 +1,43 @@
+<import src="/templates/showcase/index" />
+
+<view>
+  <!-- 占位 -->
+  <view wx:if="{{isSticky}}" style="height: 50px;"></view>
+
+  <!-- 吸顶 tab -->
+  <view class="tab-bar {{isSticky ? 'fixed' : ''}}" style="top: {{top}}px;">
+    <block wx:for="{{tabs}}" wx:key="key">
+      <view class="tab-item {{activeIndex === index ? 'active' : ''}}" data-index="{{index}}" bindtap="onTabClick">
+        {{item.title}}
+      </view>
+    </block>
+  </view>
+
+  <!-- 内容区域 -->
+  <swiper current="{{activeIndex}}" bindchange="onSwiperChange" class="swiper-container" skip-hidden-item-layout>
+    <block wx:for="{{tabs}}" wx:key="key">
+      <swiper-item>
+        <view class="tab-content">
+          <!-- 书籍分类tab -->
+          <scroll-view wx:if="{{item.key === 'categories'}}" scroll-y class="news-list" bindscrolltolower="onNewsScrollToLower" style="height: 100%">
+            <block wx:for="{{newsList}}" wx:key="id">
+              <view class="news-item">{{item.title}}</view>
+            </block>
+            <!-- <view wx:if="{{loadingNews}}" class="loading">加载中...</view>
+            <view wx:if="{{finishedNews}}" class="loading">没有更多了</view> -->
+          </scroll-view>
+          <!-- 其他 tab -->
+          <scroll-view wx:else scroll-y class="book-list-container" bindscrolltolower="onNewsScrollToLower">
+            <navigator wx:for="{{item.content}}" wx:key="{{item.id}}" url="/pages/booklist/children/booklist-detail?id={{item.id}}" class="book-list__item" hover-class="ui--active">
+              <image class="book-list__item-image" src="{{item.imgs.small || '/images/icon_empty_booklist.png'}}" mode="aspectFill" />
+              <view class="book-list__item-message">
+                <view class="book-list__item-message_title">{{item.title}}</view>
+                <view class="book-list__item-message_authors"><text wx:for="{{item.author}}" wx:key="*this" class="book-list__item-message_author">{{item}}</text></view>
+              </view>
+            </navigator>
+          </scroll-view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
