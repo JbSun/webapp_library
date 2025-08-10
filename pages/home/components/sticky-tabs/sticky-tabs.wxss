@@ -27,9 +27,25 @@
 .tab-content {
   height: 100%;
 }
-.news-item {
+
+.category-item {
   padding: 20rpx;
-  border-bottom: 1px solid #f0f0f0;
+  margin: 20rpx;
+  border-radius: 8rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.category-item-title {
+  margin-bottom: 6rpx;
+}
+.category-item-image {
+  height: 180rpx;
+  width: 127rpx;
+}
+.category-item-books {
+  font-size: small;
+  color: #a6aeb5;
 }
 .loading {
   text-align: center;

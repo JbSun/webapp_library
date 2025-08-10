@@ -1,4 +1,8 @@
-import { getRankingBooks, getRecommendedBooksByUserId } from "../../apis/book";
+import {
+  getRankingBooks,
+  getRecommendedBooksByUserId,
+  getTypes,
+} from "../../apis/book";
 import { getRecommendedBooklistsByUserId } from "../../apis/booklist";
 import { showTip } from "../../utils/tip";
 import { getUID } from "../../utils/permission";
@@ -156,8 +160,10 @@ Page({
       getRankingBooks(),
       getRecommendedBooklistsByUserId(getUID()),
       app.getUserInfo(),
+      getTypes(),
     ]).then((res) => {
       console.log("===>", res?.[2]);
+      console.log("2 ===>", res?.[4]);
       this.setData({
         recommendBooks: res[0].data.map((i) => i.book),
         readingBooks: res[0].data

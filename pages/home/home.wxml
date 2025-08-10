@@ -19,7 +19,7 @@
   <!-- <panel title="正在阅读" url="/pages/list/booklist?type=recommend"> -->
   <template is="reading-books" data="{{books: readingBooks}}"></template>
 
-  <sticky-tabs id="stickyTabs" tabs="{{tabList}}" top="47" scrollTop="{{scrollTop}}" newsList="{{newsList}}" loadingNews="{{loadingNews}}" finishedNews="{{finishedNews}}" bind:loadmore="loadMoreNews" />
+  <sticky-tabs id="stickyTabs" tabs="{{tabList}}" top="47" scrollTop="{{scrollTop}}" bind:loadmore="loadMoreNews" />
   <!-- </panel> -->
   <!-- <panel title="推荐图书" url="/pages/list/book?type=recommend">
     <template is="showcase-book-list" data="{{books: recommendBooks}}"></template>

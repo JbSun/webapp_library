@@ -1,0 +1,366 @@
+{
+  "status":"1",
+  "msg":"数据返回成功",
+  "data":[
+      {
+          "type_id": "@integer(60, 100)",
+          "type_name": "文化",
+          "book_list": [
+              {
+                  "id": "@integer(60, 100)",
+                  "title": "追风筝的人",
+                  "origin_title": "The Kite Runner",
+                  "alt_title": "@string",
+                  "subtitle": "@string",
+                  "type": "A11",
+                  "author": [
+                      "[阿]卡勒德·胡赛尼"
+                  ],
+                  "tags": [
+                      "@string"
+                  ],
+                  "total_score": "8.8",
+                  "review_num": "@integer(60, 100)",
+                  "read_count": "@integer(60, 100)",
+                  "imgs": {
+                      "small": "https://img3.doubanio.com/lpic/s1727290.jpg",
+                      "medium": "@string",
+                      "large": "@string"
+                  }
+              },
+              {
+                  "id": "@integer(60, 100)",
+                  "title": "追风筝的人",
+                  "origin_title": "The Kite Runner",
+                  "alt_title": "@string",
+                  "subtitle": "@string",
+                  "type": "A11",
+                  "author": [
+                      "[阿]卡勒德·胡赛尼"
+                  ],
+                  "tags": [
+                      "@string"
+                  ],
+                  "total_score": "8.8",
+                  "review_num": "@integer(60, 100)",
+                  "read_count": "@integer(60, 100)",
+                  "imgs": {
+                      "small": "https://img3.doubanio.com/lpic/s1727290.jpg",
+                      "medium": "@string",
+                      "large": "@string"
+                  }
+              },
+              {
+                  "id": "@integer(60, 100)",
+                  "title": "追风筝的人",
+                  "origin_title": "The Kite Runner",
+                  "alt_title": "@string",
+                  "subtitle": "@string",
+                  "type": "A11",
+                  "author": [
+                      "[阿]卡勒德·胡赛尼"
+                  ],
+                  "tags": [
+                      "@string"
+                  ],
+                  "total_score": "8.8",
+                  "review_num": "@integer(60, 100)",
+                  "read_count": "@integer(60, 100)",
+                  "imgs": {
+                      "small": "https://img3.doubanio.com/lpic/s1727290.jpg",
+                      "medium": "@string",
+                      "large": "@string"
+                  }
+              }
+          ]
+      },
+      {
+          "type_id": "@integer(60, 100)",
+          "type_name": "历史",
+          "book_list": [
+              {
+                  "id": "@integer(60, 100)",
+                  "title": "追风筝的人",
+                  "origin_title": "The Kite Runner",
+                  "alt_title": "@string",
+                  "subtitle": "@string",
+                  "type": "A11",
+                  "author": [
+                      "[阿]卡勒德·胡赛尼"
+                  ],
+                  "tags": [
+                      "@string"
+                  ],
+                  "total_score": "8.8",
+                  "review_num": "@integer(60, 100)",
+                  "read_count": "@integer(60, 100)",
+                  "imgs": {
+                      "small": "https://img3.doubanio.com/lpic/s1727290.jpg",
+                      "medium": "@string",
+                      "large": "@string"
+                  }
+              },
+              {
+                  "id": "@integer(60, 100)",
+                  "title": "追风筝的人",
+                  "origin_title": "The Kite Runner",
+                  "alt_title": "@string",
+                  "subtitle": "@string",
+                  "type": "A11",
+                  "author": [
+                      "[阿]卡勒德·胡赛尼"
+                  ],
+                  "tags": [
+                      "@string"
+                  ],
+                  "total_score": "8.8",
+                  "review_num": "@integer(60, 100)",
+                  "read_count": "@integer(60, 100)",
+                  "imgs": {
+                      "small": "https://img3.doubanio.com/lpic/s1727290.jpg",
+                      "medium": "@string",
+                      "large": "@string"
+                  }
+              },
+              {
+                  "id": "@integer(60, 100)",
+                  "title": "追风筝的人",
+                  "origin_title": "The Kite Runner",
+                  "alt_title": "@string",
+                  "subtitle": "@string",
+                  "type": "A11",
+                  "author": [
+                      "[阿]卡勒德·胡赛尼"
+                  ],
+                  "tags": [
+                      "@string"
+                  ],
+                  "total_score": "8.8",
+                  "review_num": "@integer(60, 100)",
+                  "read_count": "@integer(60, 100)",
+                  "imgs": {
+                      "small": "https://img3.doubanio.com/lpic/s1727290.jpg",
+                      "medium": "@string",
+                      "large": "@string"
+                  }
+              }
+          ]
+      },
+      {
+          "type_id": "@integer(60, 100)",
+          "type_name": "人文",
+          "book_list": [
+              {
+                  "id": "@integer(60, 100)",
+                  "title": "追风筝的人",
+                  "origin_title": "The Kite Runner",
+                  "alt_title": "@string",
+                  "subtitle": "@string",
+                  "type": "A11",
+                  "author": [
+                      "[阿]卡勒德·胡赛尼"
+                  ],
+                  "tags": [
+                      "@string"
+                  ],
+                  "total_score": "8.8",
+                  "review_num": "@integer(60, 100)",
+                  "read_count": "@integer(60, 100)",
+                  "imgs": {
+                      "small": "https://img3.doubanio.com/lpic/s1727290.jpg",
+                      "medium": "@string",
+                      "large": "@string"
+                  }
+              },
+              {
+                  "id": "@integer(60, 100)",
+                  "title": "追风筝的人",
+                  "origin_title": "The Kite Runner",
+                  "alt_title": "@string",
+                  "subtitle": "@string",
+                  "type": "A11",
+                  "author": [
+                      "[阿]卡勒德·胡赛尼"
+                  ],
+                  "tags": [
+                      "@string"
+                  ],
+                  "total_score": "8.8",
+                  "review_num": "@integer(60, 100)",
+                  "read_count": "@integer(60, 100)",
+                  "imgs": {
+                      "small": "https://img3.doubanio.com/lpic/s1727290.jpg",
+                      "medium": "@string",
+                      "large": "@string"
+                  }
+              },
+              {
+                  "id": "@integer(60, 100)",
+                  "title": "追风筝的人",
+                  "origin_title": "The Kite Runner",
+                  "alt_title": "@string",
+                  "subtitle": "@string",
+                  "type": "A11",
+                  "author": [
+                      "[阿]卡勒德·胡赛尼"
+                  ],
+                  "tags": [
+                      "@string"
+                  ],
+                  "total_score": "8.8",
+                  "review_num": "@integer(60, 100)",
+                  "read_count": "@integer(60, 100)",
+                  "imgs": {
+                      "small": "https://img3.doubanio.com/lpic/s1727290.jpg",
+                      "medium": "@string",
+                      "large": "@string"
+                  }
+              }
+          ]
+      },
+      {
+          "type_id": "@integer(60, 100)",
+          "type_name": "学术",
+          "book_list": [
+              {
+                  "id": "@integer(60, 100)",
+                  "title": "追风筝的人",
+                  "origin_title": "The Kite Runner",
+                  "alt_title": "@string",
+                  "subtitle": "@string",
+                  "type": "A11",
+                  "author": [
+                      "[阿]卡勒德·胡赛尼"
+                  ],
+                  "tags": [
+                      "@string"
+                  ],
+                  "total_score": "8.8",
+                  "review_num": "@integer(60, 100)",
+                  "read_count": "@integer(60, 100)",
+                  "imgs": {
+                      "small": "https://img3.doubanio.com/lpic/s1727290.jpg",
+                      "medium": "@string",
+                      "large": "@string"
+                  }
+              },
+              {
+                  "id": "@integer(60, 100)",
+                  "title": "追风筝的人",
+                  "origin_title": "The Kite Runner",
+                  "alt_title": "@string",
+                  "subtitle": "@string",
+                  "type": "A11",
+                  "author": [
+                      "[阿]卡勒德·胡赛尼"
+                  ],
+                  "tags": [
+                      "@string"
+                  ],
+                  "total_score": "8.8",
+                  "review_num": "@integer(60, 100)",
+                  "read_count": "@integer(60, 100)",
+                  "imgs": {
+                      "small": "https://img3.doubanio.com/lpic/s1727290.jpg",
+                      "medium": "@string",
+                      "large": "@string"
+                  }
+              },
+              {
+                  "id": "@integer(60, 100)",
+                  "title": "追风筝的人",
+                  "origin_title": "The Kite Runner",
+                  "alt_title": "@string",
+                  "subtitle": "@string",
+                  "type": "A11",
+                  "author": [
+                      "[阿]卡勒德·胡赛尼"
+                  ],
+                  "tags": [
+                      "@string"
+                  ],
+                  "total_score": "8.8",
+                  "review_num": "@integer(60, 100)",
+                  "read_count": "@integer(60, 100)",
+                  "imgs": {
+                      "small": "https://img3.doubanio.com/lpic/s1727290.jpg",
+                      "medium": "@string",
+                      "large": "@string"
+                  }
+              }
+          ]
+      },
+      {
+          "type_id": "@integer(60, 100)",
+          "type_name": "军事",
+          "book_list": [
+              {
+                  "id": "@integer(60, 100)",
+                  "title": "追风筝的人",
+                  "origin_title": "The Kite Runner",
+                  "alt_title": "@string",
+                  "subtitle": "@string",
+                  "type": "A11",
+                  "author": [
+                      "[阿]卡勒德·胡赛尼"
+                  ],
+                  "tags": [
+                      "@string"
+                  ],
+                  "total_score": "8.8",
+                  "review_num": "@integer(60, 100)",
+                  "read_count": "@integer(60, 100)",
+                  "imgs": {
+                      "small": "https://img3.doubanio.com/lpic/s1727290.jpg",
+                      "medium": "@string",
+                      "large": "@string"
+                  }
+              },
+              {
+                  "id": "@integer(60, 100)",
+                  "title": "追风筝的人",
+                  "origin_title": "The Kite Runner",
+                  "alt_title": "@string",
+                  "subtitle": "@string",
+                  "type": "A11",
+                  "author": [
+                      "[阿]卡勒德·胡赛尼"
+                  ],
+                  "tags": [
+                      "@string"
+                  ],
+                  "total_score": "8.8",
+                  "review_num": "@integer(60, 100)",
+                  "read_count": "@integer(60, 100)",
+                  "imgs": {
+                      "small": "https://img3.doubanio.com/lpic/s1727290.jpg",
+                      "medium": "@string",
+                      "large": "@string"
+                  }
+              },
+              {
+                  "id": "@integer(60, 100)",
+                  "title": "追风筝的人",
+                  "origin_title": "The Kite Runner",
+                  "alt_title": "@string",
+                  "subtitle": "@string",
+                  "type": "A11",
+                  "author": [
+                      "[阿]卡勒德·胡赛尼"
+                  ],
+                  "tags": [
+                      "@string"
+                  ],
+                  "total_score": "8.8",
+                  "review_num": "@integer(60, 100)",
+                  "read_count": "@integer(60, 100)",
+                  "imgs": {
+                      "small": "https://img3.doubanio.com/lpic/s1727290.jpg",
+                      "medium": "@string",
+                      "large": "@string"
+                  }
+              }
+          ]
+      }
+  ]
+  }

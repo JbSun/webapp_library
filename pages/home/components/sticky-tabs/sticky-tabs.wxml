@@ -20,13 +20,21 @@
         <!-- 非吸顶的情况，不使用滚动view -->
         <view class="tab-content" wx:if="{{!isSticky}}">
           <!-- 书籍分类tab -->
-          <view wx:if="{{item.key === 'categories'}}" class="news-list" bindscrolltolower="onNewsScrollToLower" style="height: 100%">
-            <block wx:for="{{newsList}}" wx:key="id">
-              <view class="news-item">{{item.title}}</view>
+          <view wx:if="{{item.key === 'categories'}}" class="news-list" bindscrolltolower="onScrollToLower" style="height: 100%">
+            <block wx:for="{{item.content}}" wx:key="id">
+              <view class="category-item">
+                <view>
+                  <view class="category-item-title">{{item.type_name}}</view>
+                  <view wx:for="{{item.book_list}}" wx:key="{{item.id}}" wx:for-index="idx" class="category-item-books">
+                    {{idx+1}} {{item.title}}
+                  </view>
+                </view>
+                <image class="category-item-image" src="{{item.book_list[0].imgs.small || '/images/icon_empty_booklist.png'}}" mode="aspectFill" />
+              </view>
             </block>
           </view>
           <!-- 其他 tab -->
-          <view wx:else class="book-list-container" bindscrolltolower="onNewsScrollToLower">
+          <view wx:else class="book-list-container" bindscrolltolower="onScrollToLower">
             <navigator wx:for="{{item.content}}" wx:key="{{item.id}}" wx:for-index="idx" url="/pages/booklist/children/booklist-detail?id={{item.id}}" class="book-list__item" hover-class="ui--active">
               <image class="book-list__item-image" src="{{item.imgs.small || '/images/icon_empty_booklist.png'}}" mode="aspectFill" />
               <view class="book-list__item-message">
@@ -39,13 +47,13 @@
         <!-- 吸顶，需要滚动加载更多数据 -->
         <view class="tab-content" wx:else>
           <!-- 书籍分类tab -->
-          <scroll-view wx:if="{{item.key === 'categories'}}" scroll-y class="news-list" bindscrolltolower="onNewsScrollToLower" style="height: 100%">
-            <block wx:for="{{newsList}}" wx:key="id">
-              <view class="news-item">{{item.title}}</view>
+          <scroll-view wx:if="{{item.key === 'categories'}}" scroll-y class="news-list" bindscrolltolower="onScrollToLower" style="height: 100%">
+            <block wx:for="{{item.content}}" wx:key="id">
+              <view class="news-item">{{item.type_name}}</view>
             </block>
           </scroll-view>
           <!-- 其他 tab -->
-          <scroll-view wx:else scroll-y class="book-list-container" bindscrolltolower="onNewsScrollToLower">
+          <scroll-view wx:else scroll-y class="book-list-container" bindscrolltolower="onScrollToLower">
             <navigator wx:for="{{item.content}}" wx:for-index="idx" wx:key="{{item.id}}" url="/pages/booklist/children/booklist-detail?id={{item.id}}" class="book-list__item" hover-class="ui--active">
               <image class="book-list__item-image" src="{{item.imgs.small || '/images/icon_empty_booklist.png'}}" mode="aspectFill" />
               <view class="book-list__item-message">

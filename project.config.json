@@ -14,7 +14,7 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "2.20.1",
+  "libVersion": "3.9.0",
   "appid": "wx843f6360ab2a4e34",
   "projectname": "weapp-library",
   "packOptions": {

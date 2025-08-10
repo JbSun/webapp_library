@@ -1,0 +1,24 @@
+<template name="home-category-list">
+  <!-- 书籍分类tab -->
+  <block wx:for="{{content}}" wx:key="id">
+    <view class="category-item">
+      <view>
+        <view class="category-item-title">{{item.type_name}}</view>
+        <view wx:for="{{item.book_list}}" wx:key="{{item.id}}" wx:for-index="idx" class="category-item-books">
+          {{idx+1}} {{item.title}}
+        </view>
+      </view>
+      <image class="category-item-image" src="{{item.book_list[0].imgs.small || '/images/icon_empty_booklist.png'}}" mode="aspectFill" />
+    </view>
+  </block>
+</template>
+
+<template name="home-book-list">
+  <navigator wx:for="{{content}}" wx:key="{{item.id}}" wx:for-index="idx" url="/pages/booklist/children/booklist-detail?id={{item.id}}" class="book-list__item" hover-class="ui--active">
+    <image class="book-list__item-image" src="{{item.imgs.small || '/images/icon_empty_booklist.png'}}" mode="aspectFill" />
+    <view class="book-list__item-message">
+      <view class="book-list__item-message_title">{{idx+1}} {{item.title}}</view>
+      <view class="book-list__item-message_authors"><text wx:for="{{item.author}}" wx:key="*this" class="book-list__item-message_author">{{item}}</text></view>
+    </view>
+  </navigator>
+</template>
